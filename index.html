@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubham Barkale — Civil Servant, Indian Railways</title>
+<meta name="description" content="Shubham Barkale — Civil Servant with the Indian Railways, IIT Bombay Silver Medallist, and UPSC CSE 2023 qualifier. Writing and mentoring for civil services aspirants.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">Shubham Barkale<small>Civil Servant · Indian Railways</small></a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Writing</a></li>
+      <li><a href="mentorship.html">Mentorship</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <div class="hero__grid">
+    <div>
+      <span class="eyebrow">UPSC CSE 2023 · IIT Bombay</span>
+      <h1 class="hero__name">Shubham Barkale</h1>
+      <p class="hero__role"><b>Civil Servant, Indian Railways.</b> Engineer by training, generalist by calling — now writing and mentoring for the road I just walked.</p>
+      <p class="lead measure">I spent years preparing for the civil services while building a career in structural engineering. This is where I share what I learned along the way, and where aspirants can find honest guidance — not hacks, just the real work.</p>
+      <div class="btn-row">
+        <a href="mentorship.html" class="btn btn--primary">Work with me &rarr;</a>
+        <a href="blog.html" class="btn btn--ghost">Read the writing</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <!-- Replace this block with: <img src="assets/portrait.jpg" alt="Shubham Barkale"> -->
+      <div class="portrait__ph"><b>Your photo here</b>Save it as assets/portrait.jpg and swap the placeholder in index.html &amp; about.html</div>
+    </div>
+  </div>
+</header>
+
+<hr class="divider">
+
+<section class="block--tight wrap">
+  <div class="stats">
+    <div class="stat"><div class="stat__num">CSE <span>2023</span></div><div class="stat__label">Cleared the civil services examination</div></div>
+    <div class="stat"><div class="stat__num">9.10<span>/10</span></div><div class="stat__label">IIT Bombay dual-degree CPI</div></div>
+    <div class="stat"><div class="stat__num"><span>Silver</span> Medal</div><div class="stat__label">Institute award · branch topper</div></div>
+    <div class="stat"><div class="stat__num">2 <span>papers</span></div><div class="stat__label">Peer-reviewed publications</div></div>
+  </div>
+</section>
+
+<section class="block wrap">
+  <span class="eyebrow ruled">Three reasons this site exists</span>
+  <div class="cards cards--3" style="margin-top:8px;">
+    <article class="card">
+      <div class="card__num">01 — The record</div>
+      <h3>An honest account</h3>
+      <p>A clear record of the work so far — engineering, research, and the examination — kept plainly, without the gloss.</p>
+      <p><a href="about.html">Read the full story &rarr;</a></p>
+    </article>
+    <article class="card">
+      <div class="card__num">02 — The writing</div>
+      <h3>Notes for aspirants</h3>
+      <p>Essays on strategy, answer-writing, and staying steady through a long preparation — written for the person I was three years ago.</p>
+      <p><a href="blog.html">Browse the essays &rarr;</a></p>
+    </article>
+    <article class="card">
+      <div class="card__num">03 — The mentoring</div>
+      <h3>One-to-one guidance</h3>
+      <p>Structured mentorship for serious aspirants — answer reviews, strategy sessions, and a steady second opinion.</p>
+      <p><a href="mentorship.html">See how it works &rarr;</a></p>
+    </article>
+  </div>
+</section>
+
+<section class="band block">
+  <div class="wrap measure">
+    <span class="eyebrow">A note on intent</span>
+    <h2>I'm not selling a shortcut.</h2>
+    <p class="lead">The civil services examination rewards depth, patience, and clear thinking — none of which can be bought. What I can offer is direction: the difference between working hard and working well. If that's useful to you, let's talk.</p>
+    <div class="btn-row"><a href="connect.html" class="btn btn--ghost">Get in touch &rarr;</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>&copy; <span id="yr"></span> Shubham Barkale · Bengaluru, India</div>
+    <div class="footer__links">
+      <a href="about.html">About</a>
+      <a href="blog.html">Writing</a>
+      <a href="mentorship.html">Mentorship</a>
+      <a href="connect.html">Connect</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  const t=document.querySelector('.nav__toggle'),l=document.querySelector('.nav__links');
+  t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>

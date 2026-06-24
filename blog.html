@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writing — Shubham Barkale</title>
+<meta name="description" content="Essays and notes for civil services aspirants — strategy, answer-writing, optional subjects, and staying steady through a long preparation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">Shubham Barkale<small>Civil Servant · Indian Railways</small></a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Writing</a></li>
+      <li><a href="mentorship.html">Mentorship</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="block wrap">
+  <span class="eyebrow">Writing</span>
+  <h1>Notes for aspirants.</h1>
+  <p class="lead measure">Honest essays on preparing for the civil services — what worked, what wasted my time, and how to think about the examination as a whole rather than a pile of subjects. No hacks. Just the real work, written plainly.</p>
+</header>
+
+<hr class="divider">
+
+<section class="block wrap">
+  <div class="post-list">
+
+    <a href="posts/start-here.html" class="post-row">
+      <div class="post-row__date">Latest</div>
+      <div>
+        <h3>If I had to start the preparation again</h3>
+        <p>The five things I'd do differently from day one — and the one habit I'd keep exactly as it was.</p>
+      </div>
+      <span class="tag">Strategy</span>
+    </a>
+
+    <!-- ============================================================
+         TO ADD A NEW POST:
+         1. Copy posts/start-here.html to posts/your-new-post.html
+         2. Edit the title, date, and body inside that file
+         3. Copy the <a class="post-row"> block above, paste it here,
+            and update the href, date, title, summary and tag.
+         Newest posts go at the top.
+         ============================================================ -->
+
+    <div class="post-row" style="opacity:.6;cursor:default;">
+      <div class="post-row__date">Coming soon</div>
+      <div>
+        <h3>Answer-writing: structure before eloquence</h3>
+        <p>Why a clear skeleton beats a beautiful sentence — and a simple template you can drill.</p>
+      </div>
+      <span class="tag">Mains</span>
+    </div>
+
+    <div class="post-row" style="opacity:.6;cursor:default;">
+      <div class="post-row__date">Coming soon</div>
+      <div>
+        <h3>Choosing an optional you can live with</h3>
+        <p>The questions to ask yourself before you commit a year to a subject.</p>
+      </div>
+      <span class="tag">Optional</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="band block">
+  <div class="wrap measure">
+    <span class="eyebrow">Stay in the loop</span>
+    <h2>New essays land here first.</h2>
+    <p class="lead">Working through the preparation and want a second opinion on your strategy? That's what the mentorship page is for.</p>
+    <div class="btn-row"><a href="mentorship.html" class="btn btn--ghost">See mentorship &rarr;</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>&copy; <span id="yr"></span> Shubham Barkale · Bengaluru, India</div>
+    <div class="footer__links">
+      <a href="about.html">About</a><a href="blog.html">Writing</a><a href="mentorship.html">Mentorship</a><a href="connect.html">Connect</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  const t=document.querySelector('.nav__toggle'),l=document.querySelector('.nav__links');
+  t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>

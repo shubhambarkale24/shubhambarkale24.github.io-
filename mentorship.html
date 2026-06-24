@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentorship — Shubham Barkale</title>
+<meta name="description" content="One-to-one mentorship for serious civil services aspirants: strategy sessions, answer reviews, and a steady second opinion.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">Shubham Barkale<small>Civil Servant · Indian Railways</small></a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Writing</a></li>
+      <li><a href="mentorship.html" class="active">Mentorship</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="block wrap">
+  <span class="eyebrow">Mentorship</span>
+  <h1>A steady second opinion.</h1>
+  <p class="lead measure">I mentor a small number of serious aspirants at a time — because real guidance needs attention, and attention doesn't scale. If you want direction rather than a shortcut, here's how I can help.</p>
+  <div class="btn-row"><a href="connect.html" class="btn btn--primary">Request a session &rarr;</a></div>
+</header>
+
+<hr class="divider">
+
+<section class="block wrap">
+  <span class="eyebrow ruled">What I help with</span>
+  <div class="offer" style="margin-top:18px;">
+    <article class="card">
+      <h3>Strategy &amp; planning</h3>
+      <p>A clear-eyed look at your current approach — sources, timetable, optional choice, and the gaps you can't see yourself. We build a plan you can actually sustain.</p>
+      <div class="price">Best for: early-stage aspirants</div>
+    </article>
+    <article class="card">
+      <h3>Answer-writing reviews</h3>
+      <p>You send answers; I return honest, specific feedback on structure, content, and presentation — the three places marks are quietly won or lost.</p>
+      <div class="price">Best for: Mains preparation</div>
+    </article>
+    <article class="card">
+      <h3>Interview &amp; personality test</h3>
+      <p>Mock discussions and DAF-based preparation to help you speak with clarity and composure when it counts most.</p>
+      <div class="price">Best for: post-Mains stage</div>
+    </article>
+    <article class="card">
+      <h3>The steady check-in</h3>
+      <p>A recurring conversation to keep you accountable, troubleshoot slumps, and protect your momentum across a long preparation.</p>
+      <div class="price">Best for: anyone going the distance</div>
+    </article>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="block wrap">
+  <span class="eyebrow ruled">How it works</span>
+  <div class="cards cards--3" style="margin-top:18px;">
+    <article class="card">
+      <div class="card__num">Step 01</div>
+      <h3>Tell me where you are</h3>
+      <p>Reach out through the connect page with a short note on your stage, your attempt history, and what you're stuck on.</p>
+    </article>
+    <article class="card">
+      <div class="card__num">Step 02</div>
+      <h3>We find the fit</h3>
+      <p>A short first conversation to see whether I'm the right person to help — and which kind of support actually serves you.</p>
+    </article>
+    <article class="card">
+      <div class="card__num">Step 03</div>
+      <h3>We get to work</h3>
+      <p>Structured sessions, honest feedback, and a plan you own. No dependency, no false comfort — just steady progress.</p>
+    </article>
+  </div>
+
+  <div class="note" style="margin-top:34px;max-width:760px;">
+    <b style="color:var(--ink);font-family:'Fraunces',serif;">A note on honesty:</b> I take on only as many aspirants as I can genuinely give time to, so availability is limited and sometimes closed. If we're not the right fit, I'll say so — that's part of the help.
+  </div>
+</section>
+
+<section class="band block">
+  <div class="wrap measure">
+    <span class="eyebrow">Ready when you are</span>
+    <h2>Let's talk about your preparation.</h2>
+    <p class="lead">Send a short message about where you are and what you need. I read every one.</p>
+    <div class="btn-row"><a href="connect.html" class="btn btn--ghost">Get in touch &rarr;</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>&copy; <span id="yr"></span> Shubham Barkale · Bengaluru, India</div>
+    <div class="footer__links">
+      <a href="about.html">About</a><a href="blog.html">Writing</a><a href="mentorship.html">Mentorship</a><a href="connect.html">Connect</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  const t=document.querySelector('.nav__toggle'),l=document.querySelector('.nav__links');
+  t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>
